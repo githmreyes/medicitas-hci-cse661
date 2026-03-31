@@ -25,7 +25,7 @@ include __DIR__ . '/../layouts/header.php';
         <h2 class="section-title mb-1">Pacientes</h2>
         <p class="section-subtitle">Gestión integral de pacientes registrados</p>
     </div>
-    <a href="/MEDICITAS_HCI/views/pacientes/nuevo.php" class="btn btn-success">
+    <a href="<?= url('views/pacientes/nuevo.php') ?>" class="btn btn-success">
         <i class="bi bi-plus-circle me-2"></i>Nuevo paciente
     </a>
 </div>
@@ -65,8 +65,8 @@ include __DIR__ . '/../layouts/header.php';
                         <td><?= htmlspecialchars($row['telefono']) ?></td>
                         <td><?= htmlspecialchars($row['estado_civil']) ?></td>
                         <td class="text-end">
-                            <a href="/MEDICITAS_HCI/views/pacientes/editar.php?id=<?= $row['id_paciente'] ?>" class="btn btn-warning btn-sm">Editar</a>
-                            <a href="/MEDICITAS_HCI/controllers/pacienteController.php?action=delete&id=<?= $row['id_paciente'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('¿Eliminar paciente?')">Eliminar</a>
+                            <a href="<?= url('views/pacientes/editar.php') ?>?id=<?= $row['id_paciente'] ?>" class="btn btn-warning btn-sm">Editar</a>
+                            <a href="<?= url('controllers/pacienteController.php') ?>?action=delete&id=<?= $row['id_paciente'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('¿Eliminar paciente?')">Eliminar</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

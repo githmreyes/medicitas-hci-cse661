@@ -31,7 +31,7 @@ include __DIR__ . '/../layouts/header.php';
 </div>
 
 <div class="form-card">
-    <form method="POST" action="/MEDICITAS_HCI/controllers/citaController.php?action=update">
+    <form method="POST" action="<?= url('controllers/citaController.php?action=update') ?>">
         <input type="hidden" name="id_cita" value="<?= $cita['id_cita'] ?>">
 
         <div class="row g-4">
@@ -90,7 +90,7 @@ include __DIR__ . '/../layouts/header.php';
 
             <div class="col-12 d-flex gap-3">
                 <button type="submit" class="btn btn-success">Actualizar cita</button>
-                <a href="/MEDICITAS_HCI/views/citas/listado.php" class="btn btn-outline-secondary">Volver</a>
+                <a href="<?= url('views/citas/listado.php') ?>" class="btn btn-outline-secondary">Volver</a>
             </div>
         </div>
     </form>

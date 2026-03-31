@@ -28,7 +28,7 @@ Sistema de Gestión de Citas de Especialidades Médicas centrado en HCI.
 2. Importar `database_medicitas_hci.sql` en phpMyAdmin.
 3. Verificar datos en `config/database.php`.
 4. Abrir:
-   `http://localhost/MEDICITAS_HCI/views/auth/login.php`
+   `https://medicitas.tecnisvr.com/views/auth/login.php`
 
 ## Credenciales demo
 - Usuario: admin@medicitas.com

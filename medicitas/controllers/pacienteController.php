@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-
+require_once __DIR__ . '/../config/app.php';
 require_once __DIR__ . '/../config/database.php';
 require_once __DIR__ . '/../config/flash.php';
 require_once __DIR__ . '/../models/Paciente.php';
@@ -59,7 +59,7 @@ if ($action === 'update' && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (!empty($errores)) {
         setFlash('danger', implode(' ', $errores));
-        header("Location: /MEDICITAS_HCI/views/pacientes/editar.php?id={$id}");
+        redirectTo("views/pacientes/editar.php?id={$id}");
         exit;
     }
 

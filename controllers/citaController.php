@@ -68,7 +68,7 @@ if ($action === 'update' && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (!empty($errores)) {
         setFlash('danger', implode(' ', $errores));
-        header("Location: /MEDICITAS_HCI/views/citas/editar.php?id={$id}");
+        redirectTo("views/citas/editar.php?id={$id}");
         exit;
     }
 

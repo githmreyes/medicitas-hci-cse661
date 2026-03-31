@@ -22,7 +22,7 @@ include __DIR__ . '/../layouts/header.php';
 </div>
 
 <div class="form-card">
-    <form method="POST" action="/MEDICITAS_HCI/controllers/pacienteController.php?action=update">
+    <form method="POST" action="<?= url('controllers/pacienteController.php') ?>?action=update">
         <input type="hidden" name="id_paciente" value="<?= $paciente['id_paciente'] ?>">
         <div class="row g-4">
             <div class="col-md-6">
@@ -55,7 +55,7 @@ include __DIR__ . '/../layouts/header.php';
             </div>
             <div class="col-12 d-flex gap-3">
                 <button type="submit" class="btn btn-success">Actualizar</button>
-                <a href="/MEDICITAS_HCI/views/pacientes/listado.php" class="btn btn-outline-secondary">Volver</a>
+                <a href="<?= url('views/pacientes/listado.php') ?>" class="btn btn-outline-secondary">Volver</a>
             </div>
         </div>
     </form>

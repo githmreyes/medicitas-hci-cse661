@@ -87,7 +87,7 @@ include __DIR__ . '/views/layouts/header.php';
                     <h5 class="mb-1">Citas recientes</h5>
                     <small class="text-muted">Últimos registros en el sistema</small>
                 </div>
-                <a href="/MEDICITAS_HCI/views/citas/listado.php" class="btn btn-primary btn-sm">Ver todas</a>
+                <a href="<?= url('views/citas/listado.php') ?>" class="btn btn-primary btn-sm">Ver todas</a>
             </div>
 
             <table class="table table-modern align-middle">
@@ -129,13 +129,13 @@ include __DIR__ . '/views/layouts/header.php';
         <div class="content-card">
             <h5 class="mb-3">Acciones rápidas</h5>
             <div class="d-grid gap-3">
-                <a href="/MEDICITAS_HCI/views/citas/nueva.php" class="btn btn-success">
+                <a href="<?= url('views/citas/nueva.php') ?>" class="btn btn-success">
                     <i class="bi bi-plus-circle me-2"></i>Nueva cita
                 </a>
-                <a href="/MEDICITAS_HCI/views/pacientes/nuevo.php" class="btn btn-primary">
+                <a href="<?= url('views/pacientes/nuevo.php') ?>" class="btn btn-primary">
                     <i class="bi bi-person-plus me-2"></i>Nuevo paciente
                 </a>
-                <a href="/MEDICITAS_HCI/views/medicos/nuevo.php" class="btn btn-outline-secondary">
+                <a href="<?= url('views/medicos/nuevo.php') ?>" class="btn btn-outline-secondary">
                     <i class="bi bi-person-badge me-2"></i>Nuevo médico
                 </a>
             </div>

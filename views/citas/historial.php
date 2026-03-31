@@ -55,7 +55,7 @@ include __DIR__ . '/../layouts/header.php';
     </table>
 
     <div class="mt-3">
-        <a href="/MEDICITAS_HCI/views/citas/listado.php" class="btn btn-outline-secondary">
+        <a href="<?= url('views/citas/listado.php') ?>" class="btn btn-outline-secondary">
             Volver al listado
         </a>
     </div>

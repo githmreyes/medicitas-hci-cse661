@@ -11,7 +11,7 @@ unset($_SESSION['error_login']);
     <title>Login | MediCitas HCI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="/MEDICITAS_HCI/public/css/style.css">
+    <link rel="stylesheet" href="<?= url('public/css/style.css') ?>">
     <style>
         .login-wrapper{
             min-height:100vh;
@@ -53,7 +53,7 @@ unset($_SESSION['error_login']);
                 <div class="alert alert-danger"><?= htmlspecialchars($error) ?></div>
             <?php endif; ?>
 
-            <form method="POST" action="/MEDICITAS_HCI/controllers/authController.php?action=login">
+            <form method="POST" action="<?= url('controllers/authController.php?action=login') ?>">
                 <div class="mb-3">
                     <label class="form-label">Correo electrónico</label>
                     <input type="email" name="correo" class="form-control" placeholder="admin@medicitas.com" required>

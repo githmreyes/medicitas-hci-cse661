@@ -16,7 +16,7 @@
 5. Abrir login en navegador.
 
 ## Ruta inicial
-http://localhost/MEDICITAS_HCI/views/auth/login.php
+https://medicitas.tecnisvr.com/views/auth/login.php
 
 ## Despliegue futuro
 El sistema puede migrarse a hosting con soporte PHP y MySQL.

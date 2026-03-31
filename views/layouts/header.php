@@ -15,7 +15,7 @@ $usuarioRol = $usuario['rol'] ?? 'Invitado';
     <title>MediCitas HCI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="/MEDICITAS_HCI/public/css/style.css">
+    <link rel="stylesheet" href="<?= url('public/css/style.css') ?>">
 </head>
 <body>
 <div class="app-shell">
@@ -31,13 +31,13 @@ $usuarioRol = $usuario['rol'] ?? 'Invitado';
         </div>
 
         <nav class="sidebar-menu">
-            <a href="/MEDICITAS_HCI/index.php" class="menu-item"><i class="bi bi-speedometer2"></i><span>Dashboard</span></a>
-            <a href="/MEDICITAS_HCI/views/pacientes/listado.php" class="menu-item"><i class="bi bi-people"></i><span>Pacientes</span></a>
-            <a href="/MEDICITAS_HCI/views/medicos/listado.php" class="menu-item"><i class="bi bi-person-badge"></i><span>Médicos</span></a>
-            <a href="/MEDICITAS_HCI/views/citas/listado.php" class="menu-item"><i class="bi bi-calendar2-check"></i><span>Citas</span></a>
-            <a href="/MEDICITAS_HCI/views/citas/nueva.php" class="menu-item"><i class="bi bi-plus-circle"></i><span>Nueva cita</span></a>
-            <a href="/MEDICITAS_HCI/views/reportes/index.php" class="menu-item"><i class="bi bi-bar-chart-line"></i><span>Reportes</span></a>
-            <a href="/MEDICITAS_HCI/controllers/authController.php?action=logout" class="menu-item"><i class="bi bi-box-arrow-left"></i><span>Salir</span></a>
+            <a href="<?= url('index.php') ?>" class="menu-item"><i class="bi bi-speedometer2"></i><span>Dashboard</span></a>
+            <a href="<?= url('views/pacientes/listado.php') ?>" class="menu-item"><i class="bi bi-people"></i><span>Pacientes</span></a>
+            <a href="<?= url('views/medicos/listado.php') ?>" class="menu-item"><i class="bi bi-person-badge"></i><span>Médicos</span></a>
+            <a href="<?= url('views/citas/listado.php') ?>" class="menu-item"><i class="bi bi-calendar2-check"></i><span>Citas</span></a>
+            <a href="<?= url('views/citas/nueva.php') ?>" class="menu-item"><i class="bi bi-plus-circle"></i><span>Nueva cita</span></a>
+            <a href="<?= url('views/reportes/index.php') ?>" class="menu-item"><i class="bi bi-bar-chart-line"></i><span>Reportes</span></a>
+            <a href="<?= url('controllers/authController.php') ?>?action=logout" class="menu-item"><i class="bi bi-box-arrow-left"></i><span>Salir</span></a>
         </nav>
     </aside>
 

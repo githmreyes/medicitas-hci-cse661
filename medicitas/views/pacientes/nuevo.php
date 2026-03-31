@@ -6,7 +6,7 @@
 </div>
 
 <div class="form-card">
-    <form method="POST" action="/MEDICITAS_HCI/controllers/pacienteController.php?action=store">
+    <form method="POST" action="<?= url('controllers/pacienteController.php') ?>?action=store">
         <div class="row g-4">
             <div class="col-md-6">
                 <label class="form-label">Identidad</label>
@@ -39,7 +39,7 @@
             </div>
             <div class="col-12 d-flex gap-3">
                 <button type="submit" class="btn btn-success">Guardar</button>
-                <a href="/MEDICITAS_HCI/views/pacientes/listado.php" class="btn btn-outline-secondary">Volver</a>
+                <a href="<?= url('views/pacientes/listado.php') ?>" class="btn btn-outline-secondary">Volver</a>
             </div>
         </div>
     </form>
