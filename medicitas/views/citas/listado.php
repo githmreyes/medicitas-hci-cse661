@@ -87,9 +87,9 @@ include __DIR__ . '/../layouts/header.php';
                         <td><?= htmlspecialchars($row['motivo']) ?></td>
                         <td><span class="status-badge status-<?= strtolower($row['estado_cita']) ?>"><?= htmlspecialchars(ucfirst($row['estado_cita'])) ?></span></td>
                         <td class="text-end">
-                            <a href="<?= url('views/citas/editar.php') ?>id=<?= $row['id_cita'] ?>" class="btn btn-warning btn-sm">Editar</a>
-                            <a href="<?= url('controllers/citaController.php') ?>action=cancel&id=<?= $row['id_cita'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('¿Cancelar cita?')">Cancelar</a>
-                            <a href="<?= url('views/citas/historial.php') ?>id=<?= $row['id_cita'] ?>" class="btn btn-info btn-sm">Historial</a>
+                            <a href="<?= url('views/citas/editar.php') ?>?id=<?= $row['id_cita'] ?>" class="btn btn-warning btn-sm">Editar</a>
+                            <a href="<?= url('controllers/citaController.php') ?>?action=cancel&id=<?= $row['id_cita'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('¿Cancelar cita?')">Cancelar</a>
+                            <a href="<?= url('views/citas/historial.php') ?>?id=<?= $row['id_cita'] ?>" class="btn btn-info btn-sm">Historial</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

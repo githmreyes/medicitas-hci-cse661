@@ -25,8 +25,7 @@ include __DIR__ . '/../layouts/header.php';
         <h2 class="section-title mb-1">Pacientes</h2>
         <p class="section-subtitle">Gestión integral de pacientes registrados</p>
     </div>
-    <a href="<?= url('views/pacientes/nuevo.php') ?>"
- class="btn btn-success">
+    <a href="<?= url('views/pacientes/nuevo.php') ?>" class="btn btn-success">
         <i class="bi bi-plus-circle me-2"></i>Nuevo paciente
     </a>
 </div>

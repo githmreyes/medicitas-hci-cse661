@@ -53,7 +53,7 @@ unset($_SESSION['error_login']);
                 <div class="alert alert-danger"><?= htmlspecialchars($error) ?></div>
             <?php endif; ?>
 
-            <form method="POST" action="<?= url('controllers/authController.php?action=login') ?>">
+            <form method="POST" action="<?= url('controllers/authController.php') ?>?action=login">
                 <div class="mb-3">
                     <label class="form-label">Correo electrónico</label>
                     <input type="email" name="correo" class="form-control" placeholder="admin@medicitas.com" required>

@@ -31,7 +31,7 @@ include __DIR__ . '/../layouts/header.php';
 </div>
 
 <div class="form-card">
-    <form method="POST" action="<?= url('controllers/citaController.php?action=update') ?>">
+    <form method="POST" action="<?= url('controllers/citaController.php') ?>?action=update">
         <input type="hidden" name="id_cita" value="<?= $cita['id_cita'] ?>">
 
         <div class="row g-4">

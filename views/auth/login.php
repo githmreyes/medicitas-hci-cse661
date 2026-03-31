@@ -1,5 +1,7 @@
 <?php
 session_start();
+require_once __DIR__ . '/../../config/app.php';
+
 $error = $_SESSION['error_login'] ?? null;
 unset($_SESSION['error_login']);
 ?>
